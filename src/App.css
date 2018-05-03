@@ -1,0 +1,73 @@
+body{
+  background:orange;
+}
+
+.setting {
+  padding:40px 0px;
+}
+
+.calendar {
+  display:flex;
+  flex-wrap:wrap;
+}
+
+.calendar > div {
+  width: calc(90%/7);
+  height: 90px;
+  flex-shrink:0;
+  background:lightgray;
+  border: 1px solid white;
+  color:white;
+}
+
+.week {
+  display:flex;
+  flex-wrap:wrap;
+}
+
+.week >div {
+  width:calc(90%/7);
+  flex-shrink:0;
+  background:skyblue;
+  border:1px solid white;
+  color: white;
+}
+.calendar > .selectedDate {
+  background:yellow;
+}
+
+.event:nth-child(1) {
+  background: salmon;
+  color: white;
+}
+
+.event:nth-child(2) {
+  background: lightgreen;
+  color: white;
+}
+
+.event:nth-child(3) {
+  background: skyblue;
+  color: white;
+}
+
+.eventList {
+  padding:30px 0px;
+}
+
+.eventList input{
+  width:30vw;
+  height:5vh;
+  border-radius:5%;
+
+}
+.eventForm button{
+  width:5vw;
+  height:5vh;
+  border-radius:50%;
+}
+.eventList .eventDetail {
+  display:flex;
+  padding:10px 0px;
+  color:darkgreen;
+}
